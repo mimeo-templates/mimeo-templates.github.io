@@ -2,7 +2,7 @@
 title: "tepiton templates"
 subtitle: ""
 author: ""
-date: 2026-10-04
+date: 2026-10-11
 description: ""
 ---
 
@@ -33,7 +33,7 @@ A pandoc-based single-page Markdown site with no SSG toolchain.
 ## [pandoc-resume](https://github.com/tepiton/pandoc-resume)  [•](https://tepiton.com/pandoc-resume/)
 A resume site from one `resume.md`: `build.sh` (pandoc + weasyprint) renders HTML, PDF, DOCX, and TXT behind an index page.
 
-## [mimeo](https://github.com/tepiton/mimeo) [•](https://mimeo.lol/)
+## [mimeo](https://github.com/tepiton/mimeo) [•](https://tepiton.com/mimeo/)
 Placeholder template that shows the `s i t e n a m e`
 
 ## [laptopistan](https://github.com/tepiton/laptopistan)  [•](https://tepiton.com/laptopistan/)
