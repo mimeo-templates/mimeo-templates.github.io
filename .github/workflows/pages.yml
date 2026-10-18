@@ -20,12 +20,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Checkout org profile (template list lives there)
+        uses: actions/checkout@v4
+        with:
+          repository: tepiton/.github
+          path: org-profile
       - name: Install pandoc
         run: sudo apt-get install -y pandoc
       - name: Build
         run: |
           mkdir -p _site
-          pandoc index.md -o _site/index.html --template=html.template.pandoc --standalone -f gfm
+          { cat index.md; echo; sed -n '/<!-- templates/,$p' org-profile/profile/README.md; } > page.md
+          pandoc page.md -o _site/index.html --template=html.template.pandoc --standalone -f gfm --shift-heading-level-by=-1
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
