@@ -1,8 +1,8 @@
 ---
-title: "tepiton templates"
+title: "mimeo templates"
 subtitle: ""
 author: ""
-date: 2026-10-24
+date: 2026-10-29
 description: ""
 ---
 
